@@ -9,14 +9,12 @@ public class TigaLoop {
 
         System.out.println("===== SATU DERET, TIGA LOOP =====");
 
-        // loop for
         System.out.print("for      : ");
         for (int i = 1; i <= n; i++) {
             System.out.print(i + " ");
         }
         System.out.println();
 
-        // loop while
         System.out.print("while    : ");
         int j = 1;
         while (j <= n) {
@@ -25,7 +23,6 @@ public class TigaLoop {
         }
         System.out.println();
 
-        // loop do-while
         System.out.print("do-while : ");
         int k = 1;
         do {
@@ -36,7 +33,6 @@ public class TigaLoop {
 
         System.out.println();
 
-        // bukti off-by-one
         int kurang = 0;
         for (int i = 1; i < n; i++) {
             kurang++;
@@ -49,6 +45,21 @@ public class TigaLoop {
 
         System.out.println("i <  n berputar : " + kurang + " kali");
         System.out.println("i <= n berputar : " + kurangSama + " kali");
+
+        int hitung = 0;
+        System.out.print("Disaring : ");
+        for (int i = 1; i <= 10; i++) {
+            if (i % 2 == 0) {
+                continue;
+            }
+            if (i > 7) {
+                break;
+            }
+            System.out.print(i + " ");
+            hitung++;
+        }
+        System.out.println();
+        System.out.println("Sampai println  : " + hitung + " kali");
 
 
     }
